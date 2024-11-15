@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turo ni Gab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Code para makausad</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#advanced">Advanced</a></li>
+                <li><a href="#html-basics">HTML Basics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to my HTML tutorial site! We provide clear and simple explanations for everything about HTML, from the basics to advanced techniques. Our goal is to help you learn and apply HTML concepts with ease.</p>
+    </section>
+<section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="html-basics">
+        <h2>HTML Basics</h2>
+
+        <h3>HTML Structure</h3>
+        <p>Every HTML page begins with the <code>&lt;!DOCTYPE html&gt;</code> declaration, which specifies the document type. The main sections include:</p>
+        <ul>
+            <li><strong>&lt;html&gt;:</strong> The root element that wraps all HTML content.</li>
+            <li><strong>&lt;head&gt;:</strong> Contains meta-information, like the page title and link to CSS files.</li>
+            <li><strong>&lt;body&gt;:</strong> Holds the visible content of the webpage.</li>
+        </ul>
+        <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" class="try-it">Learn HTML Basics on W3Schools</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="try-it">Explore HTML on MDN</a>
+
+        <h3>Basic HTML Tags</h3>
+        <ul>
+            <li><strong>&lt;h1&gt; to &lt;h6&gt;:</strong> Headers, where <code>&lt;h1&gt;</code> is the largest and <code>&lt;h6&gt;</code> is the smallest.</li>
+            <li><strong>&lt;p&gt;:</strong> Paragraphs for regular text.</li>
+            <li><strong>&lt;a&gt;:</strong> Anchor tags for hyperlinks. Example: <code>&lt;a href="https://example.com"&gt;Link Text&lt;/a&gt;</code></li>
+            <li><strong>&lt;img&gt;:</strong> Image tags. Example: <code>&lt;img src="image.jpg" alt="description"&gt;</code></li>
+            <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;:</strong> Unordered lists, ordered lists, and list items.</li>
+        </ul>
+        <a href="https://www.w3schools.com/html/html_elements.asp" target="_blank" class="try-it">Try to Code Yourself on W3Schools</a>
+
+        <h3>Forms</h3>
+        <p>Forms allow user input. Key elements are:</p>
+        <ul>
+            <li><strong>&lt;form&gt;:</strong> Wraps the entire form content.</li>
+            <li><strong>&lt;input&gt;:</strong> Accepts user input; types include "text", "email", "password", etc.</li>
+            <li><strong>&lt;textarea&gt;:</strong> A larger text box for multiline input.</li>
+            <li><strong>&lt;button&gt; or &lt;input type="submit"&gt;:</strong> Submit button to send the form data.</li>
+        </ul>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms" target="_blank" class="try-it">Learn About Forms on MDN</a>
+
+        <h3>HTML Comments</h3>
+        <p>Comments are added with <code>&lt;!-- comment text --&gt;</code> and are ignored by the browser.</p>
+        <a href="https://www.w3schools.com/html/html_comments.asp" target="_blank" class="try-it">Learn About Comments on W3Schools</a>
+    </section>
+
+    <section id="advanced">
+        <h2>Advanced HTML Features</h2>
+
+        <h3>Responsive Images</h3>
+        <p>Learn how to use the <code>&lt;picture&gt;</code> tag for responsive images.</p>
+        <pre><code>&lt;picture&gt;
+  &lt;source srcset="image-500.jpg" media="(max-width: 500px)"&gt;
+  &lt;img src="image-1000.jpg" alt="Sample Image"&gt;
+&lt;/picture&gt;</code></pre>
+        <a href="https://www.w3schools.com/html/html_responsive.asp" target="_blank" class="try-it">Learn About Responsive Images</a>
+
+        <h3>HTML5 Semantic Elements</h3>
+        <p>Explore semantic HTML elements like <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+        <pre><code>&lt;header&gt;Header Section&lt;/header&gt;
+&lt;nav&gt;Navigation Section&lt;/nav&gt;
+&lt;article&gt;Article Content&lt;/article&gt;
+&lt;footer&gt;Footer Content&lt;/footer&gt;</code></pre>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" class="try-it">Explore HTML5 Elements on MDN</a>
+    </section>
+     
+    <a href="reflection.html" style="color: green; font-size: 18px; text-decoration: none; border: 1px solid #ccc; padding: 5px; border-radius: 5px;">Go to My Reflection</a>
+
+    <footer>
+        <p>&copy; 2024 All Rights Reserved Code para makausad</p>
+    </footer>
+
+    <style>
+        .try-it {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .try-it:hover {
+            background-color: #45a049;
+        }
+    </style>
+</body>
+</html>
+</body>
+</html>

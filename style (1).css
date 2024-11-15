@@ -1,0 +1,197 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px; /* Added some space at the top */
+}
+
+/* Header section */
+header {
+    width: 100%;
+    background-image: url('gaga.jpg'); /* Add the path to your image */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    color: #fff;
+    padding: 40px 20px; /* Increased padding for a larger header */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for depth */
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif; /* Apply the Google font */
+    font-size: 3em; /* Increased font size */
+    margin-bottom: 15px;
+    letter-spacing: 2px; /* Adds some letter spacing for readability */
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px; /* Rounded the buttons for a modern look */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2em; /* Slightly larger font for better readability */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Section styling */
+section {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px 0;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px; /* Rounded corners for a softer look */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1); /* Larger shadow for depth */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em; /* Larger header size */
+    text-align: center;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: left;
+    font-size: 1em; /* Slightly larger text for better readability */
+}
+
+th {
+    background-color: #333;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Input styling */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1em; /* Slightly larger text */
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    background-color: #fff;
+    border-color: #333;
+    outline: none;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 14px 30px; /* Larger padding for better clickability */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2em; /* Larger font for better readability */
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Scale effect for button */
+}
+
+/* Footer section */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 40px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+img {
+    width: 100%;
+    max-width: 300px; /* Slightly larger image */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px; /* Rounder corners for images */
+    margin-top: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(90%); /* Slight darkening effect on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    table, th, td {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    img {
+        max-width: 200px; /* Smaller images on mobile */
+        height: 200px;
+    }
+
+    input[type="submit"] {
+        padding: 12px 25px; /* Smaller button on mobile */
+        font-size: 1.1em;
+    }
+}
